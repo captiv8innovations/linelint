@@ -12,4 +12,4 @@ FROM scratch
 COPY --from=0 /bin/linelint /linelint
 COPY LICENSE README.md ./
 WORKDIR /data
-ENTRYPOINT ["/linelint", "."]
+ENTRYPOINT ["/linelint", "-a", "."]
